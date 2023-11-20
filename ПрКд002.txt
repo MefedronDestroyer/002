@@ -1,0 +1,102 @@
+(001)
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    while (true) {
+        char ch;
+        short int n1, n2, n3, q;
+        cout << "Vvedite pervoe chislo: " << endl;
+        cin >> n1;
+        cout << "Vvedite vtoroe chislo: " << endl;
+        cin >> n2;
+        cout << "Vvedite resultat: " << endl;
+        cin >> n3;
+            if (n3 == n1 * n2) {
+            cout << "Verno!";
+        }
+            else cout << "Neverno. Dolzhno poluchitsa:  " << n1 * n2;
+        cout << "                                  Nachat proverku? 1-Da / 2-Net.";
+        cin >> q;
+        system("cls");
+        if (q != 1)break;
+    }
+    
+}
+
+-------------------------------------------------------------------------------------------------
+
+(002)
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    while (true) {
+        int n, q;
+        cout << "Vvedite den nedely: " << endl;
+        cin >> n;
+        if (n == 1) {
+            cout << "Ponedelnik: 5:30 Prosnutsa 17:30 Poehat kukuhoi...";
+        }
+        if (n == 2) {
+            cout << "Vtornik: 6:30 Prosnutsa 16:30 Poehat kukuhoi...";
+        }
+        if (n == 3) {
+            cout << "Sreda: 7:30 Prosnutsa 15:30 Poehat kukuhoi...";
+        }
+        if (n == 4) {
+            cout << "Chitverg: 8:30 Prosnutsa 14:30 Poehat kukuhoi...";
+        }
+        if (n == 5) {
+            cout << "Piatnica: 10:30 Pacani piatnica URA! 11:30 Spatky...";
+        }
+        if (n == 6) {
+            cout << "Subbota: 10:30 Prosnutsa 12:30 Poehat kukuhoi...";
+        }
+        if (n == 7) {
+            cout << "Voskresenie: 10:30 Pacani piatnica URA! 11:30 Spatky...";
+        }
+
+        cout << "                                  Povtor? 1-Da / 2-Net.";
+        cin >> q;
+        system("cls");
+        if (q != 1)break;
+    }
+
+}
+
+---------------------------------------------------------------------------------------
+
+(003)
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int mas[10];
+	mas[0] = 0;
+	mas[1] = 1;
+	mas[2] = 2;
+	mas[3] = 3;
+	mas[4] = 4;
+	mas[5] = 5;
+	mas[6] = 6;
+	mas[7] = 7;
+	mas[8] = 8;
+	mas[9] = 9;
+	int n = 0;
+	for (int q = 0; q <= 10; q++) {
+		if (q % 2 != 0) {
+			n += 1;
+		}
+	}
+	cout << "Nechetnih chisel: " << n << endl;
+}
